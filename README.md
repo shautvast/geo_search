@@ -18,6 +18,8 @@ The Overpass api is sadly not very stable. For that reason I chose to run it loc
 I collected this info as well as possible, but I might have missed something...
 
 ### Overpass-API
+Building the Overpass API works best on linux. Therefore I created an Ubunto VM on my mac using UTM. 
+This works pretty smoothly given you have the right dependencies. 
 
 #### UTM or other hypervisor
 - using virtualisation, so build from source on ARM64
