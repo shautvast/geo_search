@@ -21,11 +21,16 @@ I collected this info as well as possible, but I might have missed something...
 Building the Overpass API works best on linux. Therefore I created an Ubunto VM on my mac using UTM. 
 This works pretty smoothly given you have the right dependencies. 
 
+-> I did not niceify the paths. Adjust them to your own setup
+
 #### UTM or other hypervisor
 - using virtualisation, so build from source on ARM64
 - ubuntu 24.04 (minimal)
 - add extra virtual disk 64Gb (fits netherlands OSM database)
 - port forwards 22->2222 80->80 5173->5173
+
+5173 is optional for turbopass-api (see below)
+22/ssh in your favorite terminal works better than the UTM system console
 
 ```
 sudo apt-get update
@@ -60,6 +65,7 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
+_You may need to add `u+x` for the cgi-bin/dispatcher executables_
 
 #### optional: Overpass-turbo UI
 Overpass-turbo frontend is not used by the agent.
