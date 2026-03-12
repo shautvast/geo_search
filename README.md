@@ -11,11 +11,11 @@ but if there are no hits, it zooms out or traverses sideways.
 The test data is provided for humans to get a feel of how it works. They are screenshots from google.maps
 
 ### Running the agent:
-'uv run agent main.py [image file]'
+`uv run agent main.py [image file]`
 
 ## Setup
 The Overpass api is sadly not very stable. For that reason I chose to run it locally. That was quite a bit of work
-I collected this info as well as possible, but I might have missed something. 
+I collected this info as well as possible, but I might have missed something...
 
 ### Overpass-API
 
